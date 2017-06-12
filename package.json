@@ -1,6 +1,6 @@
 {
   "name": "packing-template-util",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "license": "MIT",
   "files": [
@@ -10,7 +10,7 @@
     "build": "babel src -d dist",
     "start": "babel-node src/index.js",
     "lint": "eslint --quiet \"**/*.js\"",
-    "release": "standard-version --first-release",
+    "release": "standard-version",
     "prepublish": "npm run build",
     "postrelease": "git push && git push origin --tags"
   },
