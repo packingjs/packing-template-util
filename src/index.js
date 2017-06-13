@@ -13,7 +13,7 @@ const getPath = (req, options) => {
   const pageDataPath = resolve(join(mockData, endpoint.replace(extension, '.js')));
   const globalDataPath = resolve(join(mockData, globalData));
   return {
-    templatePath, pageDataPath, globalDataPath
+    templatePath, pageDataPath, globalDataPath, endpoint
   };
 };
 const getContext = async (req, res, pageDataPath, globalDataPath) => {
