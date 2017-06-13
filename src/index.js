@@ -1,5 +1,5 @@
 import { existsSync } from 'fs';
-import { resolve } from 'path';
+import { resolve, join } from 'path';
 import { parse } from 'url';
 import { isFunction } from 'util';
 import assign from 'object-assign-deep';
@@ -9,9 +9,9 @@ const getPath = (req, options) => {
   const { templates, mockData, extension, globalData } = options;
   const { pathname } = parse(req.url);
   const endpoint = options.rewriteRules[pathname] || pathname;
-  const templatePath = resolve(templates, endpoint);
-  const pageDataPath = resolve(mockData, endpoint.replace(extension, '.js'));
-  const globalDataPath = resolve(mockData, globalData);
+  const templatePath = resolve(join(templates, endpoint));
+  const pageDataPath = resolve(join(mockData, endpoint.replace(extension, '.js')));
+  const globalDataPath = resolve(join(mockData, globalData));
   return {
     templatePath, pageDataPath, globalDataPath
   };
