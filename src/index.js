@@ -1,5 +1,5 @@
 import { existsSync } from 'fs';
-import { resolve } from 'path';
+import { resolve, join } from 'path';
 import { parse } from 'url';
 import { isFunction } from 'util';
 import assign from 'object-assign-deep';
@@ -12,7 +12,10 @@ const getPath = (req, options) => {
   const { pathname } = parse(req.url);
   const endpoint = options.rewriteRules[pathname] || pathname;
   const templatePath = resolve(context, templates, endpoint);
-  const pageDataPath = resolve(context, mockData, endpoint.replace(extension, '.js'));
+  let pageDataPath = join(context, mockData, endpoint.replace(extension, '.js'));
+  if (!pageDataPath.endsWith('.js')) {
+    pageDataPath += '.js';
+  }
   const globalDataPath = resolve(context, mockData, globalData);
   return {
     templatePath, pageDataPath, globalDataPath, endpoint
