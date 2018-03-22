@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/packingjs/packing-template-util/compare/v1.0.4...v1.1.0) (2018-03-22)
+
+
+### Features
+
+* 支持 process.env.CONTEXT ([f90191a](https://github.com/packingjs/packing-template-util/commit/f90191a))
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/packingjs/packing-template-util/compare/v1.0.3...v1.0.4) (2017-06-13)
 
