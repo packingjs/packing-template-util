@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/packingjs/packing-template-util/compare/v1.1.0...v1.1.1) (2018-03-27)
+
+
+### Bug Fixes
+
+* 用 join 代替 resolve，解决地址中出现`/`会转到根目录的问题 ([c7ea004](https://github.com/packingjs/packing-template-util/commit/c7ea004))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/packingjs/packing-template-util/compare/v1.0.4...v1.1.0) (2018-03-22)
 
