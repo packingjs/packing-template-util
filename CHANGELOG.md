@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/packingjs/packing-template-util/compare/v1.1.1...v1.1.2) (2018-05-09)
+
+
+### Bug Fixes
+
+* 兼容es6 ([1f7daa0](https://github.com/packingjs/packing-template-util/commit/1f7daa0))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/packingjs/packing-template-util/compare/v1.1.0...v1.1.1) (2018-03-27)
 
