@@ -38,7 +38,7 @@ const getContext = async (req, res, pageDataPath, globalDataPath) => {
         });
       }
     } else {
-      globalContext = gcontext;
+      globalContext = gcontext.default || gcontext;
     }
   }
 
@@ -55,7 +55,7 @@ const getContext = async (req, res, pageDataPath, globalDataPath) => {
         });
       }
     } else {
-      pageContext = pcontext;
+      pageContext = pcontext.default || pcontext;
     }
   }
 
