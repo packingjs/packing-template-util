@@ -59,7 +59,7 @@ const getContext = async (req, res, pageDataPath, globalDataPath) => {
     }
   }
 
-  return assign(globalContext, pageContext);
+  return assign.noMutate(globalContext, pageContext);
 };
 
 export default {
